@@ -1,5 +1,6 @@
 FROM ruby:alpine
-
+WORKDIR /opt/linguist
+COPY . .
 RUN apk --update add --virtual build_deps \
     build-base \
     libc-dev \
